@@ -12,11 +12,12 @@ const rellenarFormulario = async (req, res) => {
 
 const enviarFormulario = async (req, res) => {
     
-    const { cuerpoMensaje, correoUsuario } = req.body
+    const { cuerpoMensaje, correoUsuario, motivo } = req.body
 
     const body = {
         cuerpoMensaje,
-        correoUsuario
+        correoUsuario,
+        motivo
     }
    
 
@@ -37,7 +38,7 @@ const enviarFormulario = async (req, res) => {
         
 
         to: "testbridgemadrid@outlook.com",
-        subject: "prueba de nodemail",
+        subject: body.motivo,
         text: body.cuerpoMensaje 
        
         
