@@ -1,12 +1,24 @@
-<main>
-    <form action="/enviado" method="post">
-        <label for="motivo">MOTIVO DEL CONTACTO</label>
-        <input type="text" name="motivo">
-        <label for="cuerpoMensaje">ESCRIBE ALGO</label>
-        <textarea name="cuerpoMensaje" id="cuerpoMensaje" cols="30" rows="10"></textarea>
-        <label for="correoUsuario">ESCRIBE TU CORREO</label>
-        <input type="email" name="correoUsuario" id="correoUsuario">
-
-        <input type="submit">
-    </form>
-</main>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO PARA ENVIAR CORREO</title>
+</head>
+<body>
+    <header>FORMULARIO PARA ENVIAR CORREO</header>
+    <main>
+        <form action="/enviado" method="post">
+            <label for="motivo">MOTIVO DEL CONTACTO</label>
+            <input type="text" name="motivo">
+            <label for="cuerpoMensaje">ESCRIBE ALGO</label>
+            <textarea name="cuerpoMensaje" id="cuerpoMensaje" cols="30" rows="10"></textarea>
+            <label for="correoUsuario">ESCRIBE TU CORREO</label>
+            <input type="email" name="correoUsuario" id="correoUsuario">
+    
+            <input type="submit">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
