@@ -1,4 +1,4 @@
-const { enviar } = require('../helpers/nodeMailerHelper');
+
 const nodemailer = require("nodemailer")
 
 
